@@ -1,23 +1,57 @@
 {
-  "name": "www.shorelinetennisclub.com",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "author": "Julian Paas",
   "dependencies": {
     "@next/font": "13.1.6",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "eslint": "8.33.0",
-    "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "4.9.5"
-  }
+    "react-dom": "18.2.0"
+  },
+  "description": "Shoreline tennis club website",
+  "devDependencies": {
+    "@types/node": "^16",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "esbuild": "^0.17.5",
+    "eslint": "^8.33.0",
+    "eslint-config-next": "^13.1.6",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-eslint-comments": "~3.2.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "globby": "^13.1.3",
+    "gray-matter": "^4.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "sortier": "^1.0.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "UNLICENSED",
+  "name": "www.shorelinetennisclub.com",
+  "packageManager": "pnpm@7.26.3",
+  "private": true,
+  "repository": "https://github.com/jpaas/www.shorelinetennisclub.com",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev -p 4444",
+    "lint": "next lint  --max-warnings 0 .",
+    "lint:fix": "next lint --fix --max-warnings 0 .",
+    "lint:report": "eslint --output-file tmp/eslint_report.json --format json .",
+    "precommit": "lint-staged",
+    "preinstall": "npx only-allow pnpm",
+    "prettier": "prettier",
+    "prettier:fix": "prettier --write",
+    "reset": "rm -rf node_modules && pnpm i",
+    "start": "next start",
+    "ts": "tsc"
+  },
+  "version": "0.1.0"
 }
