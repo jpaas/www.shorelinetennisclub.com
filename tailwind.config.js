@@ -15,8 +15,11 @@ module.exports = {
     extend: {
       colors: {
         background: colors.magicMint,
+        inverseText: colors.light,
         navHeaderBackgroundOverlay: "#08415cf2", // indigoDye with 95% opacity
         surface: colors.light,
+        tableBackground: "#08415cf2",
+        tableHeaderBackground: "#fe5e41f2",
         text: colors.indigoDye,
         textLink: colors.orangeSoda,
         textNavHeader: colors.light,

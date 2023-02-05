@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
@@ -18,7 +22,7 @@
   );
   --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 
-  --tile-border: conic-gradient(#00000080, #00000040, #00000030, #00000020, #00000010, #00000010, #00000080);
+  --tile-border: conic-gradient(#00880080, #00880040, #00880030, #00880020, #00880010, #00880010, #00880080);
   --tile-end-rgb: 228, 232, 233;
   --tile-start-rgb: 239, 245, 249;
 
@@ -66,12 +70,43 @@ body {
 }
 
 a {
-  color: inherit;
+  color: theme("colors.textLink");
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+body {
+  background-color: theme("colors.background");
+  color: theme("colors.text");
+  font-family: var(--font-work-sans), sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-gilroy-extrabold), sans-serif;
+}
+
+h1 {
+  font-size: theme("fontSize.3xl");
+  font-weight: 700;
+  padding-bottom: theme("spacing.2");
+  padding-top: theme("spacing.6");
+}
+
+h2 {
+  font-size: theme("fontSize.2xl");
+  font-weight: 500;
+  padding-bottom: theme("spacing.2");
+  padding-top: theme("spacing.6");
 }
