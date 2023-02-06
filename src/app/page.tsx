@@ -25,9 +25,11 @@ export default function Home() {
         <h1>Play Tennis, Overlooking Lake Ontario</h1>
         <p>
           Shoreline Tennis Club is your neighbourhood tennis club and is perched on a hill overlooking Lake Ontario in
-          <a href="http://www.jackdarling.com/map.php"> Jack Darling Park</a>, in Mississauga, Ontario, Canada. We
-          provide two hard surface courts for day and evening play. This is a great place for family and friends to play
-          tennis. Our season runs from March 15 to November 30.
+          <a href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
+            Jack Darling Park
+          </a>
+          , in Mississauga, Ontario, Canada. We provide two hard surface courts for day and evening play. This is a
+          great place for family and friends to play tennis. Our season runs from March 15 to November 30.
         </p>
         <h2>Membership Rate</h2>
         <table
@@ -78,17 +80,29 @@ export default function Home() {
         <h2>Club Documents</h2>
         <ul>
           <li>
-            <a href="https://docs.google.com/document/d/1b_OR4cd9V5VyaUyof9Gu5n6m05vXllUOp750yKEMQ3Q/edit">
+            <a
+              href="https://docs.google.com/document/d/1b_OR4cd9V5VyaUyof9Gu5n6m05vXllUOp750yKEMQ3Q/edit"
+              rel="noreferrer"
+              target="_blank"
+            >
               Constitution
             </a>
           </li>
           <li>
-            <a href="https://docs.google.com/document/d/1J_QCfNpp-GHO4ZTXmgjmwUq_iyJhCfrADcFyGu3TrkA/edit?usp=sharing">
+            <a
+              href="https://docs.google.com/document/d/1J_QCfNpp-GHO4ZTXmgjmwUq_iyJhCfrADcFyGu3TrkA/edit?usp=sharing"
+              rel="noreferrer"
+              target="_blank"
+            >
               Code of Conduct
             </a>
           </li>
           <li>
-            <a href="https://docs.google.com/document/d/1Ht_astsBuCgVH7MK0wwGKyXNYeCw14ZNJMrVtavLDJE/edit?usp=sharing">
+            <a
+              href="https://docs.google.com/document/d/1Ht_astsBuCgVH7MK0wwGKyXNYeCw14ZNJMrVtavLDJE/edit?usp=sharing"
+              rel="noreferrer"
+              target="_blank"
+            >
               AGM Minutes 2023
             </a>
           </li>
