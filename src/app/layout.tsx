@@ -1,12 +1,25 @@
+import { Merriweather_Sans, Roboto } from "@next/font/google"
+
 import CxScreenLayout from "@/contexts/CxScreenLayout"
 import CpNavHeader from "./CpNavHeader"
 import CpNavLinks from "./CpNavLinks"
 import CpSmallScreenNavigationMenu from "./CpSmallScreenNavigationMenu"
 import "./globals.css"
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["400", "700", "900"],
+})
+const merriweather_sans = Merriweather_Sans({
+  subsets: ["latin"],
+  variable: "--font-merriweather-sans",
+  weight: ["400", "700", "800"],
+})
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html className={`${roboto.variable} ${merriweather_sans.variable}`} lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head

@@ -21,6 +21,7 @@ module.exports = {
         tableBackground: "#08415cf2",
         tableHeaderBackground: "#fe5e41f2",
         text: colors.indigoDye,
+        textHeading: "#44403c",
         textLink: colors.orangeSoda,
         textNavHeader: colors.light,
       },

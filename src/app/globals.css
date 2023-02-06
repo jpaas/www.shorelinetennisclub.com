@@ -66,7 +66,12 @@ body {
 
 body {
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  color: rgb(var(--foreground-rgb));
+  /* background-color: theme("colors.background"); */
+  color: theme("colors.text");
+  font-family: var(--font-roboto), sans-serif;
+  font-size: theme("fontSize.lg");
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 a {
@@ -84,29 +89,25 @@ a:hover {
   }
 }
 
-body {
-  background-color: theme("colors.background");
-  color: theme("colors.text");
-  font-family: var(--font-work-sans), sans-serif;
-  line-height: 1.5;
-}
-
 h1,
 h2,
 h3 {
-  font-family: var(--font-gilroy-extrabold), sans-serif;
+  color: theme("colors.textHeading");
+  font-family: var(--font-merriweather-sans), serif;
+  padding-bottom: theme("spacing.2");
+  padding-top: theme("spacing.6");
 }
 
 h1 {
   font-size: theme("fontSize.3xl");
-  font-weight: 700;
-  padding-bottom: theme("spacing.2");
-  padding-top: theme("spacing.6");
+  font-weight: 800;
 }
 
 h2 {
   font-size: theme("fontSize.2xl");
-  font-weight: 500;
-  padding-bottom: theme("spacing.2");
-  padding-top: theme("spacing.6");
+  font-weight: 700;
+}
+
+.serif {
+  font-family: var(--font-merriweather-sans), serif;
 }

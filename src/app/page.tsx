@@ -66,7 +66,7 @@ export default function Home() {
         </p>
         <h2>Open Houses</h2>
         <p>We offer the following Open Houses this season:</p>
-        <ul className="p-4 font-serif">
+        <ul className="serif p-4">
           <li>July 8, 12 to 3 pm</li>
           <li>July 22, 12 to 3 pm</li>
           <li>Aug 6, 1 to 4 pm</li>

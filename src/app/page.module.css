@@ -31,7 +31,8 @@
   color: theme("colors.textNavHeader");
   display: flex;
   flex-wrap: wrap;
-  font-size: theme("fontSize.3xl");
+  font-size: theme("fontSize.4xl");
+  font-style: italic;
   font-weight: theme("fontWeight.bold");
   justify-content: space-between;
   letter-spacing: theme("letterSpacing.wide");
@@ -40,6 +41,8 @@
 
 .headerTitle a {
   color: theme("colors.textNavHeader");
+  font-style: normal;
+  font-weight: 900;
   text-underline-offset: 0.2em;
 }
 
