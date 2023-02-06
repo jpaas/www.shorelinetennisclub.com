@@ -3,8 +3,8 @@ This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub
 # TODO
 
 - header menu
+- sense of css - cva?
 - rest of pages
-- favicons
 - colors & typography
 - deploy on vercel
 - safe area view

@@ -1,0 +1,23 @@
+{
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "favicon/favicon-192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "favicon/favicon-512.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Shoreline Tennis Club",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Shoreline Tennis Club",
+  "splash_pages": null,
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
