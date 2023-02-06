@@ -7,6 +7,7 @@ This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub
 - favicons
 - colors & typography
 - deploy on vercel
+- safe area view
 - analytics
 
 ## Getting Started

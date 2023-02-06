@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useCallback, useEffect, useRef, useState } from "react"
 
 import useScreenLayout from "@/hooks/useScreenLayout"
+import CpNavLinks from "./CpNavLinks"
 import styles from "./page.module.css"
 
 export default function CpNavHeader() {
@@ -27,20 +28,20 @@ export default function CpNavHeader() {
       if (observedElement) observer.unobserve(observedElement)
     }
   }, [intersectionCallback])
-  console.log({ isExtraSmallScreen })
+
   return (
     <>
       <div ref={scrolledRef} />
       <header className={`${styles.header} ${hasScrolled ? styles.headerScrolled : ""}`}>
-        <div className={styles.headerTitle}>
+        <div className={`${styles.headerTitle} ${isExtraSmallScreen ? "pt-12" : ""}`}>
           <Link href="/">Shoreline Tennis Club</Link>
           <div>2023 Season</div>
         </div>
-        <nav className={styles.headerNav}>
-          <Link className={styles.headerNavLink} href="/">
-            Register Online
-          </Link>
-        </nav>
+        {!isExtraSmallScreen && (
+          <nav className={styles.headerNav}>
+            <CpNavLinks />
+          </nav>
+        )}
       </header>
     </>
   )
