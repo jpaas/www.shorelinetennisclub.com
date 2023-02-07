@@ -230,6 +230,10 @@
     padding: 4rem;
   }
 
+  .header {
+    padding: theme("padding.4");
+  }
+
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;

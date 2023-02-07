@@ -13,12 +13,12 @@ export default function CpSmallScreenNavigationMenu() {
 
   return isExtraSmallScreen ? (
     <>
-      <CpButton className="fixed left-6 top-6 z-50" onClick={toggleIsMenuOpen}>
-        <CpNavMenuIcon isOpen={isMenuOpen} />
+      <CpButton className="fixed left-2 top-4 z-50" onClick={toggleIsMenuOpen}>
+        <CpNavMenuIcon className={styles.dropShadow} isOpen={isMenuOpen} />
       </CpButton>
       {isMenuOpen && (
         <nav className={`${styles.smallScreenNav} ${isMenuOpen ? styles.smallScreenNavOpen : ""}`}>
-          <div className="pt-40">
+          <div className="flex flex-1 flex-col overflow-auto px-8 pt-44">
             <CpNavLinks isSmallScreen={true} onNavigate={toggleIsMenuOpen} />
           </div>
         </nav>

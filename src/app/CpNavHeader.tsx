@@ -33,7 +33,7 @@ export default function CpNavHeader() {
     <>
       <div ref={scrolledRef} />
       <header className={`${styles.header} ${hasScrolled ? styles.headerScrolled : ""}`}>
-        <div className={`${styles.headerTitle} ${isExtraSmallScreen ? "pt-12" : ""}`}>
+        <div className={`${styles.headerTitle} ${isExtraSmallScreen ? "pl-12" : ""}`}>
           <Link href="/">Shoreline Tennis Club</Link>
           <div>2023 Season</div>
         </div>

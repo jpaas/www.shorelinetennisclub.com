@@ -1,3 +1,7 @@
+.dropShadow {
+  filter: drop-shadow(2px 2px 2px #000000ff);
+}
+
 .headerNav {
   align-items: center;
   display: flex;
@@ -65,9 +69,10 @@
 .smallScreenNav {
   background-color: theme("colors.text");
   bottom: 0;
+  display: flex;
   left: 0;
   opacity: 0;
-  padding: theme("padding.8");
+  /* padding: theme("padding.8"); */
   position: fixed;
   right: 0;
   top: 0;
