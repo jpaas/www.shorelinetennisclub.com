@@ -2,18 +2,20 @@ import Link from "next/link"
 
 import styles from "./nav.module.css"
 
-const footerStyle = "inline-block px-2"
-const headerStyle = `inline-block ${styles.headerNavLink} p-4`
-const menuStyle = `${styles.headerNavLink} p-4 text-lg`
-
-interface CpNavLinksProps {
-  isFooter?: boolean
-  isSmallScreen?: boolean
-  onNavigate?: () => void
+const localStyles = {
+  footer: "inline-block px-2",
+  header: `inline-block ${styles.headerNavLink} p-4`,
+  menu: `${styles.headerNavLink} p-4 text-lg`,
 }
 
-export default function CpNavLinks({ isFooter, isSmallScreen, onNavigate }: CpNavLinksProps) {
-  const className = isFooter ? footerStyle : isSmallScreen ? menuStyle : headerStyle
+interface CpNavLinksProps {
+  onNavigate?: () => void
+  type: "footer" | "header" | "menu"
+}
+
+export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
+  const className = localStyles[type]
+
   return (
     <p className="text-center">
       <Link className={className} href="/" onClick={onNavigate}>

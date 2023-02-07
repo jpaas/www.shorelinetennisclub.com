@@ -42,14 +42,16 @@ export default function CxScreenLayout({ children }: { children: React.ReactNode
     function handleResize() {
       const height = window.innerHeight
       const width = window.innerWidth
-      console.log({ height, width })
+      const isLandscape = width > height
       setScreenLayoutContext({
         height,
-        isExtraSmallScreen: width < mediaBreaks.small,
-        isLandscape: width > height,
-        isLargeScreen: width >= mediaBreaks.large,
-        isMediumScreen: width >= mediaBreaks.medium && width < mediaBreaks.large,
-        isSmallScreen: width < mediaBreaks.medium,
+        isExtraSmallScreen: isLandscape ? height < mediaBreaks.small : width < mediaBreaks.small,
+        isLandscape,
+        isLargeScreen: isLandscape ? height >= mediaBreaks.large : width >= mediaBreaks.large,
+        isMediumScreen: isLandscape
+          ? height >= mediaBreaks.medium && height < mediaBreaks.large
+          : width >= mediaBreaks.medium && width < mediaBreaks.large,
+        isSmallScreen: isLandscape ? height < mediaBreaks.medium : width < mediaBreaks.medium,
         width,
       })
     }

@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <CpNavHeader />
           {children}
           <footer className="flex flex-col items-center bg-white/70 p-4">
-            <CpNavLinks isFooter={true} />
+            <CpNavLinks type="footer" />
             <p className="px-2 pt-8 text-center text-sm opacity-60">
               Copyright © Shoreline Tennis Club. All Rights Reserved.
             </p>

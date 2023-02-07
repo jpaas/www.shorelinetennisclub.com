@@ -39,7 +39,7 @@ export default function CpNavHeader() {
         </div>
         {!isExtraSmallScreen && (
           <nav className={`container mx-auto ${styles.headerNav}`}>
-            <CpNavLinks />
+            <CpNavLinks type="header" />
           </nav>
         )}
       </header>
