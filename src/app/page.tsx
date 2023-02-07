@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-8 py-4">
+      <section className="container mx-auto px-8 py-4">
         <h1>Play Tennis, Overlooking Lake Ontario</h1>
         <p>
           Shoreline Tennis Club is your neighbourhood tennis club and is perched on a hill overlooking Lake Ontario

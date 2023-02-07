@@ -33,12 +33,12 @@ export default function CpNavHeader() {
     <>
       <div ref={scrolledRef} />
       <header className={`${styles.header} ${hasScrolled ? styles.headerScrolled : ""}`}>
-        <div className={`${styles.headerTitle} ${isExtraSmallScreen ? "pl-12" : ""}`}>
+        <div className={`container mx-auto px-8 ${styles.headerTitle} ${isExtraSmallScreen ? "pl-12" : ""}`}>
           <Link href="/">Shoreline Tennis Club</Link>
           <div>2023 Season</div>
         </div>
         {!isExtraSmallScreen && (
-          <nav className={styles.headerNav}>
+          <nav className={`container mx-auto ${styles.headerNav}`}>
             <CpNavLinks />
           </nav>
         )}
