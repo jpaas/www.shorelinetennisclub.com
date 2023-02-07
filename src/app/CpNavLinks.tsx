@@ -15,47 +15,38 @@ interface CpNavLinksProps {
 export default function CpNavLinks({ isFooter, isSmallScreen, onNavigate }: CpNavLinksProps) {
   const className = isFooter ? footerStyle : isSmallScreen ? menuStyle : headerStyle
   return (
-    <ul>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Home
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Register Online
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Court Schedule
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Club Events
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Little Aces Tennis
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Rules of Play
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="/" onClick={onNavigate}>
-          Tennis Links
-        </Link>
-      </li>
-      <li className={className}>
-        <Link href="mailto:info@shorelintennisclub.com" onClick={onNavigate}>
-          Contact Us
-        </Link>
-      </li>
-    </ul>
+    <p className="text-center">
+      <Link className={className} href="/" onClick={onNavigate}>
+        Home
+      </Link>
+
+      <Link className={className} href="/" onClick={onNavigate}>
+        Register Online
+      </Link>
+
+      <Link className={className} href="/" onClick={onNavigate}>
+        Court Schedule
+      </Link>
+
+      <Link className={className} href="/" onClick={onNavigate}>
+        Club Events
+      </Link>
+
+      <Link className={className} href="/" onClick={onNavigate}>
+        Little Aces Tennis
+      </Link>
+
+      <Link className={className} href="/" onClick={onNavigate}>
+        Rules of Play
+      </Link>
+
+      <Link className={className} href="/" onClick={onNavigate}>
+        Tennis Links
+      </Link>
+
+      <Link className={className} href="mailto:info@shorelintennisclub.com" onClick={onNavigate}>
+        Contact Us
+      </Link>
+    </p>
   )
 }

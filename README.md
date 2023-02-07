@@ -2,12 +2,11 @@ This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub
 
 # TODO
 
-- header menu
 - sense of css - cva?
-- rest of pages
-- colors & typography
-- deploy on vercel
+- landscape blows, zooms on real phone
 - safe area view
+- rest of pages
+- colors
 - analytics
 
 ## Getting Started

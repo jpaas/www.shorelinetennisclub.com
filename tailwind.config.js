@@ -2,7 +2,6 @@
 
 const colors = {
   indigoDye: "#08415c",
-  keyLimePie: "#cad32e",
   light: "#fff",
   magicMint: "#b5ffe1",
   orangeSoda: "#fe5e41",

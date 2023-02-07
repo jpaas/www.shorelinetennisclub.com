@@ -65,8 +65,8 @@ body {
 }
 
 body {
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  /* background-color: theme("colors.background"); */
+  /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+  background-color: theme("colors.background");
   color: theme("colors.text");
   font-family: var(--font-roboto), sans-serif;
   font-size: theme("fontSize.lg");

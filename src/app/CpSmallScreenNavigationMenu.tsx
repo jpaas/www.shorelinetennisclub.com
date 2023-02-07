@@ -18,7 +18,7 @@ export default function CpSmallScreenNavigationMenu() {
       </CpButton>
       {isMenuOpen && (
         <nav className={`${styles.smallScreenNav} ${isMenuOpen ? styles.smallScreenNavOpen : ""}`}>
-          <div className="flex flex-1 flex-col overflow-auto px-8 pt-44">
+          <div className="flex flex-1 flex-col overflow-auto px-8 pt-48">
             <CpNavLinks isSmallScreen={true} onNavigate={toggleIsMenuOpen} />
           </div>
         </nav>
