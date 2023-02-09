@@ -2,41 +2,23 @@
 
 This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub.com website
 
-# TODO
-
-- sense of css - cva?
-- landscape blows, zooms on real phone
-- safe area view
-- rest of pages
-- colors
-- analytics
-- react jsx transform
-- github actions - badges & annotate
-
 ## Getting Started
 
-First, run the development server:
+This project uses pnpm as the package manager via [Node.js Corepack](https://pnpm.io/installation#using-corepack)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Run the development server using `pnpm dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4444](http://localhost:4444) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploying
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The app is automatically deployed to the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) when it is pushed to GitHub.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# TODO
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- content
+- react jsx transform
+- css cleanup using cva
+- safe area view
+- colors/theming/dark mode
+- analytics
