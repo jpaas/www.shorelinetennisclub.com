@@ -77,11 +77,12 @@ jobs:
         # Continue to the next step even if this fails
         continue-on-error: true
 
-      - name: Annotate based on lint report
-        uses: ataylorme/eslint-annotate-action@v2
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          report-json: "tmp/eslint_report.json"
+      # Needs write permission: https://github.com/ataylorme/eslint-annotate-action/issues/28
+      # - name: Annotate based on lint report
+      #   uses: ataylorme/eslint-annotate-action@v2
+      #   with:
+      #     repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      #     report-json: "tmp/eslint_report.json"
 
       - name: Upload lint report
         uses: actions/upload-artifact@v2
@@ -129,7 +130,7 @@ jobs:
         run: pnpm i
 
       - name: TSC
-        run: pnpm ts --showConfig
+        run: ls -al src/assets
 
       - name: TSC
         run: pnpm ts -p ./tsconfig.json
