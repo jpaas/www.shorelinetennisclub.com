@@ -22,3 +22,4 @@ The app is automatically deployed to the [Vercel Platform](https://vercel.com/ne
 - safe area view
 - colors/theming/dark mode
 - analytics
+- svgr instead of embedding svg for logo

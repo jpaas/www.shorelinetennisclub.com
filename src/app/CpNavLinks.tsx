@@ -22,11 +22,21 @@ export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
         Home
       </Link>
 
-      <Link className={className} href="/" onClick={onNavigate}>
-        Court Schedule
+      <Link
+        className={className}
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfjsdIQVx1xS_ylCRsVurmFZKKNn072z7yDeb89ytKUNzmqaA/viewform"
+        onClick={onNavigate}
+        rel="noreferrer"
+        target="_blank"
+      >
+        Register
       </Link>
 
-      <Link className={className} href="/" onClick={onNavigate}>
+      <a className={className} href="/#book_court" onClick={onNavigate}>
+        Court Booking
+      </a>
+
+      <Link className={className} href="/rules_of_play" onClick={onNavigate}>
         Rules of Play
       </Link>
 

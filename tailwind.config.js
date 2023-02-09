@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       colors: {
         background: colors.magicMint,
+        backgroundNoticesSection: colors.magicMint,
         button: { ...colors.indigoDye },
         inverseText: colors.light,
         navHeaderBackgroundOverlay: "#08415cf2", // indigoDye with 95% opacity
