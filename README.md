@@ -9,6 +9,7 @@ This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub
 - colors
 - analytics
 - react jsx transform
+- github actions - badges & annotate
 
 ## Getting Started
 
