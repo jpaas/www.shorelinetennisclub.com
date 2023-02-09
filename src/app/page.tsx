@@ -26,9 +26,9 @@ export default function Home() {
         <section className="rounded-3xl bg-backgroundNoticesSection px-8 pb-8">
           <h1>Notices</h1>
           <p>
-            The 2023 AGM was held January 14, 2023.{" "}
+            The 2023 AGM was held January 14, 2023.&nbsp;
             <Link
-              href="https://docs.google.com/document/d/1Ht_astsBuCgVH7MK0wwGKyXNYeCw14ZNJMrVtavLDJE/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1SNzLv2apmsaCoi0LI3tBCD4_Q3opN_aWc98tBAMh8hI/edit?usp=sharing"
               rel="noreferrer"
               target="_blank"
             >
