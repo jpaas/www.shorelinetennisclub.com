@@ -1,6 +1,6 @@
 "use client"
 
-import CpButton from "@/components/common/CpButton"
+import { CpButton } from "@/components/ui/CpButton"
 import useScreenLayout from "@/hooks/useScreenLayout"
 import useToggle from "@/hooks/useToggle"
 import CpNavLinks from "./CpNavLinks"
@@ -13,7 +13,7 @@ export default function CpSmallScreenNavigationMenu() {
 
   return isExtraSmallScreen ? (
     <>
-      <CpButton className="fixed left-2 top-4 z-50" onClick={toggleIsMenuOpen}>
+      <CpButton className="fixed left-2 top-4 z-50" onClick={toggleIsMenuOpen} size="none" variant="link">
         <CpNavMenuIcon className={styles.dropShadow} isOpen={isMenuOpen} />
       </CpButton>
       {isMenuOpen && (

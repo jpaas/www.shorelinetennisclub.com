@@ -1,10 +1,10 @@
-// import { Inter } from "@next/font/google"
 import Image from "next/image"
 
 import tennisball_court from "@/assets/tennisball_court.jpg"
+import { buttonVariants } from "@/components/ui/CpButton"
+import { cn } from "@/lib/utils"
+import Link from "next/link"
 import styles from "./page.module.css"
-
-// const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
@@ -22,6 +22,12 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto px-8 py-4">
+        <Link
+          className={cn([buttonVariants({ size: "xl" })])}
+          href="https://www.shorelinetennisclub.com/register_form.htm"
+        >
+          Register Now
+        </Link>
         <h1>Play Tennis, Overlooking Lake Ontario</h1>
         <p>
           Shoreline Tennis Club is your neighbourhood tennis club and is perched on a hill overlooking Lake Ontario
@@ -77,7 +83,6 @@ export default function Home() {
           <li>Aug 26, 12 to 3 pm</li>
         </ul>
         <p> Feel free to test out our courts during the above times.</p>
-
         <h2>Club Documents</h2>
         <ul>
           <li>

@@ -2,9 +2,13 @@
   "author": "Julian Paas",
   "dependencies": {
     "@next/font": "13.1.6",
+    "class-variance-authority": "^0.4.0",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.112.0",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^1.9.1"
   },
   "description": "Shoreline tennis club website",
   "devDependencies": {
@@ -26,6 +30,7 @@
     "prettier-plugin-tailwindcss": "^0.2.2",
     "sortier": "^1.0.1",
     "tailwindcss": "^3.2.4",
+    "tailwindcss-animate": "^1.0.5",
     "typescript": "^4.9.5"
   },
   "engines": {

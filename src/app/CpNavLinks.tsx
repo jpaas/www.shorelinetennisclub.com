@@ -17,13 +17,9 @@ export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
   const className = localStyles[type]
 
   return (
-    <p className="text-center">
+    <p>
       <Link className={className} href="/" onClick={onNavigate}>
         Home
-      </Link>
-
-      <Link className={className} href="/" onClick={onNavigate}>
-        Register Online
       </Link>
 
       <Link className={className} href="/" onClick={onNavigate}>
@@ -31,19 +27,7 @@ export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
       </Link>
 
       <Link className={className} href="/" onClick={onNavigate}>
-        Club Events
-      </Link>
-
-      <Link className={className} href="/" onClick={onNavigate}>
-        Little Aces Tennis
-      </Link>
-
-      <Link className={className} href="/" onClick={onNavigate}>
         Rules of Play
-      </Link>
-
-      <Link className={className} href="/" onClick={onNavigate}>
-        Tennis Links
       </Link>
 
       <Link className={className} href="mailto:info@shorelintennisclub.com" onClick={onNavigate}>

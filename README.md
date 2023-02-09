@@ -8,6 +8,7 @@ This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub
 - rest of pages
 - colors
 - analytics
+- react jsx transform
 
 ## Getting Started
 
