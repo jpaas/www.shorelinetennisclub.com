@@ -72,17 +72,20 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      - name: Generate lint report
+      - name: Generate lint report for annotation
         run: pnpm lint:report
         # Continue to the next step even if this fails
         continue-on-error: true
 
       # Needs write permission: https://github.com/ataylorme/eslint-annotate-action/issues/28
-      # - name: Annotate based on lint report
-      #   uses: ataylorme/eslint-annotate-action@v2
-      #   with:
-      #     repo-token: "${{ secrets.GITHUB_TOKEN }}"
-      #     report-json: "tmp/eslint_report.json"
+      - name: Annotate based on lint report
+        uses: ataylorme/eslint-annotate-action@v2
+        with:
+          markdown-report-on-step-summary: true
+          fail-on-warning: true
+          only-pr-files: false
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          report-json: "tmp/eslint_report.json"
 
       - name: Upload lint report
         uses: actions/upload-artifact@v2
@@ -134,3 +137,6 @@ jobs:
 
       - name: TSC
         run: pnpm ts -p ./tsconfig.json
+permissions:
+  checks: write
+  pull-requests: read

@@ -1,3 +1,5 @@
+[![lint](https://github.com/jpaas/www.shorelinetennisclub.com/actions/workflows/lint.yml/badge.svg)](https://github.com/jpaas/www.shorelinetennisclub.com/actions/workflows/lint.yml)
+
 This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub.com website
 
 # TODO
