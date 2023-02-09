@@ -78,7 +78,7 @@ jobs:
         continue-on-error: true
 
       - name: Annotate based on lint report
-        uses: ataylorme/eslint-annotate-action@1.2.0
+        uses: ataylorme/eslint-annotate-action@v2
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           report-json: "tmp/eslint_report.json"
@@ -129,4 +129,7 @@ jobs:
         run: pnpm i
 
       - name: TSC
-        run: pnpm ts
+        run: pnpm ts --showConfig
+
+      - name: TSC
+        run: pnpm ts -p ./tsconfig.json
