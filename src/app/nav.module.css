@@ -13,7 +13,6 @@
 .headerNavLink {
   border-radius: theme("borderRadius.md");
   color: theme("colors.textNavHeader");
-  display: block;
   text-underline-offset: 0.2em;
   transition: background-color 300ms ease-out, color 300ms ease-out;
 }
