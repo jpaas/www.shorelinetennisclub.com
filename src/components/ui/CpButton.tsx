@@ -19,7 +19,7 @@ const buttonVariants = cva(
         xl: "h-14 px-8 rounded-md text-xl",
       },
       variant: {
-        default: "bg-button-100 text-white hover:bg-button-500 dark:bg-button-50 dark:text-slate-900",
+        default: "bg-button-100 text-white hover:bg-button-500 dark:bg-button-50",
         destructive: "bg-red-500 text-white hover:bg-red-600 dark:hover:bg-red-600",
         ghost:
           "bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-100 dark:hover:text-slate-100 data-[state=open]:bg-transparent dark:data-[state=open]:bg-transparent",
