@@ -5,7 +5,7 @@ import styles from "./nav.module.css"
 const localStyles = {
   footer: "inline-block px-2",
   header: `inline-block ${styles.headerNavLink} p-4`,
-  menu: `${styles.headerNavLink} p-4 text-lg`,
+  menu: `block ${styles.headerNavLink} p-4 text-lg`,
 }
 
 interface CpNavLinksProps {
