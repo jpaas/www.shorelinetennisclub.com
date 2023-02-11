@@ -64,6 +64,7 @@ export default function Home() {
           <h2>Membership Rate</h2>
           <table
             className={`${styles.membershipTable} table-auto border-collapse border-spacing-4 border border-slate-400`}
+            id="book_court"
           >
             <tbody>
               <tr>
@@ -88,7 +89,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2>Court Booking and Programs</h2>
+          <h2>Court Booking Rules & Programs</h2>
           <ul className="list-inside list-disc">
             <li>Courts 1 and 2 will be blocked off on Mondays from 7 to 9 pm for a 3.0+ rated player Round Robin</li>
             <li>
@@ -112,7 +113,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="book_court">
+        <section>
           <h2>Other Club Info</h2>
           <ul>
             <li>

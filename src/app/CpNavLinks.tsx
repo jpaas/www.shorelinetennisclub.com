@@ -33,7 +33,7 @@ export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
       </Link>
 
       <a className={className} href="/#book_court" onClick={onNavigate}>
-        Court Booking
+        Court Booking Rules & Programs
       </a>
 
       <Link className={className} href="/rules_of_play" onClick={onNavigate}>
