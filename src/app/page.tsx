@@ -103,8 +103,7 @@ export default function Home() {
           <p className="pt-2">
             One court might be used for Little Aces tennis from 4:30 to 6:30 pm on weekdays. Junior lessons from ages 6
             to teens are provided by Mississauga Little Aces.
-            Email{" "}
-            <Link href="mailto:lesson@mississaugalittleaces.com">lesson@mississaugalittleaces.com</Link> for more info.
+            Email{" "} <Link href="mailto:lesson@mississaugalittleaces.com">lesson@mississaugalittleaces.com</Link> for more info.
           </p>
           <h2>Interested in Adult or Family Tennis Lessons?</h2>
           <p>
