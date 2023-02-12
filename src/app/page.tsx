@@ -51,7 +51,7 @@ export default function Home() {
             </Link>
             , in Mississauga, Ontario, Canada. We provide two <span className="font-bold">newly surfaced</span> hard
             courts for day and evening play. This is a great place for family and friends to play tennis. Our season
-            runs from March 15 to November 30.
+            runs from March 15 to November 30. Registration of the 2023 season begins in March.
           </p>
           <Link
             className={cn([buttonVariants({ size: "xl" }), "mt-4"])}
