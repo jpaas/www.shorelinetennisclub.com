@@ -102,8 +102,7 @@ export default function Home() {
           <p>Courts 1 and 2 will be blocked off on Mondays from 7 to 9 pm for a 3.0+ rated player Round Robin</p>
           <p className="pt-2">
             One court might be used for Little Aces tennis from 4:30 to 6:30 pm on weekdays. Junior lessons from ages 6
-            to teens are provided by Mississauga Little Aces.
-              Email{" "}
+            to teens are provided by Mississauga Little Aces. Email{" "}
             <Link href="mailto:lesson@mississaugalittleaces.com">lesson@mississaugalittleaces.com</Link> for more info.
           </p>
           <h2>Interested in Adult or Family Tennis Lessons?</h2>
