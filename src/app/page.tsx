@@ -81,7 +81,7 @@ export default function Home() {
               </tr>
               <tr>
                 <td className="border border-slate-300 bg-tableHeaderBackground text-lg font-bold">Junior</td>
-                <td className="border border-slate-300 opacity-90">Under 18 years of age as of January 1, 2022</td>
+                <td className="border border-slate-300 opacity-90">Under 18 years of age as of January 1, 2023</td>
                 <td className="border border-slate-300 text-right font-mono text-xl font-bold italic">$40</td>
               </tr>
             </tbody>
