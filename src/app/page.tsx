@@ -51,7 +51,7 @@ export default function Home() {
             </Link>
             , in Mississauga, Ontario, Canada. We provide two <span className="font-bold">newly surfaced</span> hard
             courts for day and evening play. This is a great place for family and friends to play tennis. Our season
-            runs from March 15 to November 30. Registration for the 2023 season begins in March.
+            runs from March 15 to November 30.
           </p>
           <Link
             className={cn([buttonVariants({ size: "xl" }), "mt-4"])}
@@ -72,17 +72,17 @@ export default function Home() {
                 <td className="border border-slate-300 opacity-90">
                   Up to four members of the immediate family living at the same address
                 </td>
-                <td className=" border border-slate-300 text-right font-mono text-xl font-bold italic">$140</td>
+                <td className=" border border-slate-300 text-right font-mono text-xl font-bold italic">$150</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 bg-tableHeaderBackground text-lg font-bold">Adult</td>
                 <td className="border border-slate-300 opacity-90">Over 18 years of age</td>
-                <td className="border border-slate-300 text-right font-mono text-xl font-bold italic">$80</td>
+                <td className="border border-slate-300 text-right font-mono text-xl font-bold italic">$90</td>
               </tr>
               <tr>
                 <td className="border border-slate-300 bg-tableHeaderBackground text-lg font-bold">Junior</td>
-                <td className="border border-slate-300 opacity-90">Under 18 years of age as of January 1, 2022</td>
-                <td className="border border-slate-300 text-right font-mono text-xl font-bold italic">$40</td>
+                <td className="border border-slate-300 opacity-90">Under 18 years of age as of January 1, 2023</td>
+                <td className="border border-slate-300 text-right font-mono text-xl font-bold italic">$45</td>
               </tr>
             </tbody>
           </table>
