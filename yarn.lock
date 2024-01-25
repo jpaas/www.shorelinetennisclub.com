@@ -195,13 +195,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:13.1.6":
-  version: 13.1.6
-  resolution: "@next/font@npm:13.1.6"
-  checksum: 91c94fe421339d145a7aea0107255b34b52940ff69edf47a256b71c9595c214673059edabb61ded91f514b7977e8f6cfdaed3c1ca905e88960f5683b9fb4cdb5
-  languageName: node
-  linkType: hard
-
 "@next/swc-darwin-arm64@npm:14.1.0":
   version: 14.1.0
   resolution: "@next/swc-darwin-arm64@npm:14.1.0"
@@ -4826,7 +4819,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "www.shorelinetennisclub.com@workspace:."
   dependencies:
-    "@next/font": "npm:13.1.6"
     "@types/node": "npm:^16"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"

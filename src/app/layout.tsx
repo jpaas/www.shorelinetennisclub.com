@@ -1,4 +1,4 @@
-import { Merriweather_Sans, Roboto } from "@next/font/google"
+import { Merriweather_Sans, Roboto } from "next/font/google"
 
 import CxScreenLayout from "@/contexts/CxScreenLayout"
 import CpNavHeader from "./CpNavHeader"

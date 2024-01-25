@@ -10,5 +10,11 @@
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "sortier.onSave": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "../../../.yarn/berry/cache/typescript-patch-32ada147aa-10c0.zip/node_modules/typescript/lib"
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib"
 }

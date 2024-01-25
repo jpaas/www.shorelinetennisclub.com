@@ -1,7 +1,6 @@
 {
   "author": "Julian Paas",
   "dependencies": {
-    "@next/font": "13.1.6",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.112.0",
