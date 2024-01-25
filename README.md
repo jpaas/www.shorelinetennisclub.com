@@ -4,9 +4,14 @@ This is a [Next.js](https://nextjs.org/) project for the www.shorelinetennisclub
 
 ## Getting Started
 
-This project uses pnpm as the package manager via [Node.js Corepack](https://pnpm.io/installation#using-corepack)
+### Set up yarn
 
-Run the development server using `pnpm dev`
+```sh
+corepack enable
+corepack prepare yarn@stable --activate
+```
+
+Run the development server using `yarn dev`
 
 Open [http://localhost:4444](http://localhost:4444) with your browser to see the result.
 

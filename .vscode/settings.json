@@ -10,5 +10,5 @@
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "sortier.onSave": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.5/node_modules/typescript/lib"
+  "typescript.tsdk": "../../../.yarn/berry/cache/typescript-patch-32ada147aa-10c0.zip/node_modules/typescript/lib"
 }
