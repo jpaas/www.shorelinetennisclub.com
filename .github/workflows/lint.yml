@@ -4,37 +4,37 @@ jobs:
   setup:
     name: Setup
     runs-on: ubuntu-latest
+    outputs:
+      YARN_CACHE: ${{ steps.setup-yarn.outputs.YARN_CACHE }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup nodejs
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
+      - name: Setup yarn
+        id: setup-yarn
         run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+          corepack enable
+          yarn --version
+          echo "YARN_CACHE=`yarn config get cacheFolder`" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      - name: Configure node_modules cache
+        id: node-modules
+        uses: actions/cache@v4
+        env:
+          cache-name: node-modules
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          path: |
+            ${{ steps.setup-yarn.outputs.YARN_CACHE }}
+          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
-      - name: Install dependencies
-        run: pnpm i
+      - name: Install node modules
+        if: steps.node-modules.outputs.cache-hit != 'true'
+        run: yarn install --immutable
 
   lint:
     name: Lint www.shorelinetennisclub.com
@@ -42,35 +42,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup nodejs
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "16"
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
+      - name: Setup yarn
         run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+          corepack enable
+          yarn --version
 
       - name: Restore node_modules cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
+        env:
+          cache-name: node-modules
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm i
+          path: |
+            ${{ needs.setup.outputs.YARN_CACHE }}
+          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v2
 
       - name: Generate lint report for annotation
         run: pnpm lint:report
@@ -88,7 +79,7 @@ jobs:
           report-json: "tmp/eslint_report.json"
 
       - name: Upload lint report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: eslint_report.json
           path: tmp/eslint_report.json
@@ -102,41 +93,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup nodejs
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "16"
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
+      - name: Setup yarn
         run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+          corepack enable
+          yarn --version
 
       - name: Restore node_modules cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
+        env:
+          cache-name: node-modules
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: yarn
+          path: |
+            ${{ needs.setup.outputs.YARN_CACHE }}
+          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v2
 
       - name: TSC
         run: ls -al src/assets
 
       - name: TSC
         run: yarn ts -p ./tsconfig.json
+
 permissions:
   checks: write
   pull-requests: read
