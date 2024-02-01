@@ -15,7 +15,7 @@ export default function Home() {
       <section>
         <div className={styles.imageSection}>
           <Image
-            alt="Tenis ball on a tennis court"
+            alt="Tennis ball on a tennis court"
             className="w-full object-cover"
             fill={true}
             priority={true}
@@ -49,9 +49,9 @@ export default function Home() {
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
               Jack Darling Park
             </Link>
-            , in Mississauga, Ontario, Canada. We two <span className="font-bold">newly surfaced</span> hard
-            courts for day and evening play. This is a great place for family and friends to play tennis. Our season
-            runs from March 15 to November 30.
+            , in Mississauga, Ontario, Canada. We two <span className="font-bold">newly surfaced</span> hard courts for
+            day and evening play. This is a great place for family and friends to play tennis. Our season runs from
+            March 15 to November 30.
           </p>
           <Link
             className={cn([buttonVariants({ size: "xl" }), "mt-4"])}

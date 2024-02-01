@@ -25,7 +25,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "sortier": "^1.0.1",
     "tailwindcss": "^3.2.4",
@@ -37,7 +37,7 @@
   },
   "license": "UNLICENSED",
   "name": "www.shorelinetennisclub.com",
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.1.0",
   "private": true,
   "repository": "https://github.com/jpaas/www.shorelinetennisclub.com",
   "scripts": {
@@ -49,7 +49,7 @@
     "precommit": "lint-staged",
     "prettier": "prettier",
     "prettier:fix": "prettier --write",
-    "reset": "rm -rf node_modules && pnpm i",
+    "sortier:all": "sortier './**/*.{css,html,js,json,jsx,ts,tsx}' '!.yarn' '!**/tmp'",
     "start": "next start",
     "ts": "tsc"
   },

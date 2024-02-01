@@ -1,8 +1,5 @@
-import tailwindcssPlugin from 'prettier-plugin-tailwindcss'
-
-const config = {
-  plugins: [tailwindcssPlugin],
+module.exports = {
+  plugins: [require("prettier-plugin-tailwindcss")],
   semi: false,
+  trailingComma: "all",
 }
-
-export default config

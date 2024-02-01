@@ -130,13 +130,13 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm i
+        run: yarn
 
       - name: TSC
         run: ls -al src/assets
 
       - name: TSC
-        run: pnpm ts -p ./tsconfig.json
+        run: yarn ts -p ./tsconfig.json
 permissions:
   checks: write
   pull-requests: read
