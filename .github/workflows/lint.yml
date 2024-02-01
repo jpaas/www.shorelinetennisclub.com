@@ -61,7 +61,7 @@ jobs:
         with:
           path: |
             ${{ needs.setup.outputs.YARN_CACHE }}
-          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v2
+          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
       - name: Generate lint report for annotation
         run: yarn lint:report
@@ -112,7 +112,7 @@ jobs:
         with:
           path: |
             ${{ needs.setup.outputs.YARN_CACHE }}
-          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v2
+          key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
       - name: TSC
         run: ls -al src/assets
