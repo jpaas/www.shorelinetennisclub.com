@@ -64,7 +64,7 @@ jobs:
           key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v2
 
       - name: Generate lint report for annotation
-        run: pnpm lint:report
+        run: yarn lint:report
         # Continue to the next step even if this fails
         continue-on-error: true
 
@@ -85,7 +85,7 @@ jobs:
           path: tmp/eslint_report.json
 
       - name: Lint for keeps
-        run: pnpm lint
+        run: yarn lint
 
   tsc:
     name: Type check www.shorelinetennisclub.com
