@@ -49,8 +49,8 @@ export default function Home() {
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
               Jack Darling Park
             </Link>
-            , in Mississauga, Ontario, Canada. We two <span className="font-bold">newly surfaced</span> hard courts for
-            day and evening play. This is a great place for family and friends to play tennis. Our season runs from
+            , in Mississauga, Ontario, Canada. We have two <span className="font-bold">newly surfaced</span> hard courts
+            for day and evening play. This is a great place for family and friends to play tennis. Our season runs from
             March 15 to November 30.
           </p>
           <Link
