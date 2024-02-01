@@ -44,12 +44,13 @@ export default function Home() {
         <section>
           <h1>Play Tennis, Overlooking Lake Ontario</h1>
           <p>
-            Shoreline Tennis Club is your neighbourhood tennis club and is perched on a hill overlooking Lake Ontario
+            Shoreline Tennis Club <span className="font-bold">is a scenic and relaxing place to enjoy tennis with your loved ones.
+            Located in 
             in&nbsp;
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
               Jack Darling Park
             </Link>
-            , in Mississauga, Ontario, Canada. We have two <span className="font-bold">newly surfaced</span> hard courts
+            , our club offers a stunning view of the Park and Lake Ontario from a hilltop. We have two <span className="font-bold">newly surfaced</span> hard courts
             for day and evening play. This is a great place for family and friends to play tennis. Our season runs from
             March 15 to November 30.
           </p>
