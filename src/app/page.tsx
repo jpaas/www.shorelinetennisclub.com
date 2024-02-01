@@ -44,7 +44,7 @@ export default function Home() {
         <section>
           <h1>Play Tennis, Overlooking Lake Ontario</h1>
           <p>
-            Shoreline Tennis Club <span className="font-bold">is your neighbourhood tennis club and is perched on a hill overlooking Lake Ontario
+            Shoreline Tennis Club is your neighbourhood tennis club and is perched on a hill overlooking Lake Ontario
             in&nbsp;
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
               Jack Darling Park
