@@ -44,17 +44,19 @@ export default function Home() {
         <section>
           <h1>Play Tennis, Overlooking Lake Ontario</h1>
           <p>
-            Shoreline Tennis Club <span className="font-bold">is a scenic and relaxing place</span> to enjoy tennis with
+            <span className="font-bold">Shoreline Tennis Club</span> is a scenic and relaxing place to enjoy tennis with
             your loved ones. Located in in&nbsp;
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
               Jack Darling Park
             </Link>
-            , our club offers a stunning view of the Park and Lake Ontario from a hilltop. Our two hard courts are
-            nestled in a serene setting of beautiful trees and have only tennis lines for a clear and focused game. You
-            can play anytime from day to night, as our courts are newly surfaced and well-lit. To make your experience
-            even more convenient, we have a great online court booking system that lets you reserve your spot and save
-            time. Join us today and experience the joy of tennis at Shoreline Tennis Club. Our season runs from March 15
-            to November 30.
+            , our club offers a stunning view of the Park and <span className="font-bold">Lake Ontario</span> from a
+            hilltop. Our <span className="font-bold">two hard courts</span> are nestled in a serene setting of beautiful
+            trees and have <span className="font-bold">only tennis lines</span> for a clear and focused game. You can
+            play anytime from <span className="font-bold">day to night</span>, as our courts are{" "}
+            <span className="font-bold">newly surfaced</span> and well-lit. To make your experience even more
+            convenient, we have a <span className="font-bold">great online court booking system</span> that lets you
+            reserve your spot and save time. Join us today and experience the joy of tennis at Shoreline Tennis Club.
+            Our season runs from <span className="font-bold">March 15 to November 30</span>.
           </p>
           <Link
             className={cn([buttonVariants({ size: "xl" }), "mt-4"])}
