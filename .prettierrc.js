@@ -1,6 +1,8 @@
-module.exports = {
-  arrowParens: "always",
-  plugins: [require("prettier-plugin-tailwindcss")],
+import tailwindcssPlugin from 'prettier-plugin-tailwindcss'
+
+const config = {
+  plugins: [tailwindcssPlugin],
   semi: false,
-  trailingComma: "all",
 }
+
+export default config
