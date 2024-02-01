@@ -44,7 +44,7 @@ export default function Home() {
         <section>
           <h1>Play Tennis, Overlooking Lake Ontario</h1>
           <p>
-            <span className="font-bold">Shoreline Tennis Club</span> is a scenic and relaxing place to enjoy tennis with
+            <span className="font-bold">Shoreline Tennis Club</span> is your neighbourhood tennis club and a relaxing place to enjoy tennis with
             your loved ones. Located in in&nbsp;
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
               Jack Darling Park
