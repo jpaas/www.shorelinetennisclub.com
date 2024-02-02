@@ -7,7 +7,7 @@
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^1.9.1"
+    "tailwind-merge": "^2.2.1"
   },
   "description": "Shoreline tennis club website",
   "devDependencies": {
@@ -24,13 +24,13 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.33",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.2",
-    "sortier": "^1.0.1",
-    "tailwindcss": "^3.2.4",
-    "tailwindcss-animate": "^1.0.5",
-    "typescript": "^4.9.5"
+    "sortier": "^2.0.2",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=16.0.0"
