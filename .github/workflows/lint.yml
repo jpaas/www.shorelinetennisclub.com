@@ -30,6 +30,7 @@ jobs:
         with:
           path: |
             ${{ steps.setup-yarn.outputs.YARN_CACHE }}
+            .yarn/install-state.gz
           key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
       - name: Install node modules
@@ -59,8 +60,10 @@ jobs:
         env:
           cache-name: node-modules
         with:
+          fail-on-cache-miss: true
           path: |
             ${{ needs.setup.outputs.YARN_CACHE }}
+            .yarn/install-state.gz
           key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
       - name: Generate lint report for annotation
@@ -110,8 +113,10 @@ jobs:
         env:
           cache-name: node-modules
         with:
+          fail-on-cache-miss: true
           path: |
             ${{ needs.setup.outputs.YARN_CACHE }}
+            .yarn/install-state.gz
           key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
       - name: TSC
