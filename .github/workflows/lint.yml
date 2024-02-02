@@ -34,7 +34,7 @@ jobs:
 
       - name: Install node modules
         if: steps.node-modules.outputs.cache-hit != 'true'
-        run: yarn install --immutable --immutable-cache
+        run: yarn install --immutable
 
   lint:
     name: Lint www.shorelinetennisclub.com
