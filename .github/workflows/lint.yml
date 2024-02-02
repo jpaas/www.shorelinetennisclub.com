@@ -35,7 +35,7 @@ jobs:
 
       - name: Install node modules
         if: steps.node-modules.outputs.cache-hit != 'true'
-        run: yarn install --immutable
+        run: yarn install --immutable --immutable-cache
 
   lint:
     name: Lint www.shorelinetennisclub.com
@@ -67,7 +67,9 @@ jobs:
           key: ${{ runner.os }}-setup-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}-v1
 
       - name: Generate lint report for annotation
-        run: yarn lint:report
+        run: |
+          yarn
+          yarn lint:report
         # Continue to the next step even if this fails
         continue-on-error: true
 
