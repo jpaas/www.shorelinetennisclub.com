@@ -47,12 +47,12 @@ export default function Home() {
             <span className="font-bold">Shoreline Tennis Club</span> is your neighbourhood tennis club and a relaxing
             place to enjoy tennis with your loved ones. Located in &nbsp;
             <Link href="http://www.jackdarling.com/map.php" rel="noreferrer" target="_blank">
-            Jack Darling Park
+              Jack Darling Park
             </Link>
             , our club offers a stunning view of the Park and <span className="font-bold">Lake Ontario</span> from a
             hilltop. Our <span className="font-bold">two hard courts</span> are nestled in a serene setting of beautiful
-            trees and have only tennis lines for a clear and focused game. You can
-            play anytime from <span className="font-bold">day to night</span>, as our courts are{" "}
+            trees and have only tennis lines for a clear and focused game. You can play anytime from{" "}
+            <span className="font-bold">day to night</span>, as our courts are{" "}
             <span className="font-bold">newly surfaced</span> and well-lit. To make your experience even more
             convenient, we have a <span className="font-bold">great online court booking system</span> that lets you
             reserve your spot and save time. Join us today and experience the joy of tennis at Shoreline Tennis Club.
