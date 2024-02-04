@@ -51,8 +51,7 @@ export default function Home() {
             </Link>
             , our club offers a stunning view of the Park and <span className="font-bold">Lake Ontario</span> from a
             hilltop. Our <span className="font-bold">two hard courts</span> are nestled in a serene setting of beautiful
-            trees. You can play anytime from{" "}
-            <span className="font-bold">day to night</span>, as our courts are{" "}
+            trees. You can play anytime from <span className="font-bold">day to night</span>, as our courts are{" "}
             <span className="font-bold">newly surfaced</span> and well-lit. To make your experience even more
             convenient, we have a <span className="font-bold">great online court booking system</span> that lets you
             reserve your spot and save time. Join us today and experience the joy of tennis at Shoreline Tennis Club.
