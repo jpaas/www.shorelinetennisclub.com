@@ -158,11 +158,11 @@ export default function Home() {
             </li>
             <li>
               <Link
-                href="https://docs.google.com/document/d/1SNzLv2apmsaCoi0LI3tBCD4_Q3opN_aWc98tBAMh8hI/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1SNzLv2apmsaCoi0LI3tBCD4_Q3opN_aWc98tBAMh8hI/edhttps://docs.google.com/document/d/1AVhFM4YfXGFz6DleuutdrPJla6B0cx-RglDNTb5vXts/edit?usp=sharingit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
               >
-                2023 AGM Minutes
+                2024 AGM Minutes
               </Link>
             </li>
           </ul>
