@@ -132,7 +132,7 @@ export default function Home() {
                 rel="noreferrer"
                 target="_blank"
               >
-                2023 Open House Schedule
+                2024 Open House Schedule
               </Link>
             </li>
             <li>
