@@ -59,7 +59,7 @@ export default function Home() {
           </p>
           <Link
             className={cn([buttonVariants({ size: "xl" }), "mt-4"])}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfjsdIQVx1xS_ylCRsVurmFZKKNn072z7yDeb89ytKUNzmqaA/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc5xPouzYKYwHEPBPnGJ9esZDmIsR9d87cd0W_HNzfYACCFwA/viewform"
             rel="noreferrer"
             target="_blank"
           >
