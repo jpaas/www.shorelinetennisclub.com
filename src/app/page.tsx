@@ -128,15 +128,6 @@ export default function Home() {
           <ul>
             <li>
               <Link
-                href="https://docs.google.com/document/d/1EVZp8rpK5aSdUS6u2E7THoE0wNm5w1gSZl66OvTBH_8/edit?usp=sharing"
-                rel="noreferrer"
-                target="_blank"
-              >
-                2024 Open House Schedule
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="https://docs.google.com/document/d/1J_QCfNpp-GHO4ZTXmgjmwUq_iyJhCfrADcFyGu3TrkA/edit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
@@ -163,6 +154,15 @@ export default function Home() {
                 target="_blank"
               >
                 2024 AGM Minutes
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://docs.google.com/document/d/1EVZp8rpK5aSdUS6u2E7THoE0wNm5w1gSZl66OvTBH_8/edit?usp=sharing"
+                rel="noreferrer"
+                target="_blank"
+              >
+                2024 Open House Schedule
               </Link>
             </li>
           </ul>
