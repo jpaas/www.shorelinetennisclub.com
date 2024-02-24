@@ -103,8 +103,8 @@ export default function Home() {
               Court Booking Rules
             </Link>
           </p>
-          <p>Courts 1 and 2 are reserved on Mondays from 7 to 9 pm for players of 3.0 level or higher.</p>
-          <p>Courts 1 and 2 are reserved on Wednesdays from 7 to 9 pm for players of 2.5 level or higher.</p>
+          <p>Courts 1 and 2 are reserved on Mondays, for a round robin from 7 to 9 pm for players of a 3.0 level or higher.</p>
+          <p>Courts 1 and 2 are reserved on Wednesdays, for a round robin from 7 to 9 pm for players of 2.5 level or higher.</p>
           <p className="pt-2">
             One court might be used for Little Aces tennis from 4:30 to 6:30 pm on weekdays. Junior lessons from ages 6
             to teens are provided by Mississauga Little Aces. Email{" "}
