@@ -103,8 +103,14 @@ export default function Home() {
               Court Booking Rules
             </Link>
           </p>
-          <p>Courts 1 and 2 are reserved on Mondays, for a round robin from 7 to 9 pm for players of a 3.0 level or higher.</p>
-          <p>Courts 1 and 2 are reserved on Wednesdays, for a round robin from 7 to 9 pm for players of 2.5 level or higher.</p>
+          <p>
+            Courts 1 and 2 are reserved on Mondays, for a round robin from 7 to 9 pm for players of a 3.0 level or
+            higher.
+          </p>
+          <p>
+            Courts 1 and 2 are reserved on Wednesdays, for a round robin from 7 to 9 pm for players of 2.5 level or
+            higher.
+          </p>
           <p className="pt-2">
             One court might be used for Little Aces tennis from 4:30 to 6:30 pm on weekdays. Junior lessons from ages 6
             to teens are provided by Mississauga Little Aces. Email{" "}
@@ -157,7 +163,7 @@ export default function Home() {
                 2024 AGM Minutes
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="https://docs.google.com/document/d/1EVZp8rpK5aSdUS6u2E7THoE0wNm5w1gSZl66OvTBH_8/edit?usp=sharing"
                 rel="noreferrer"
@@ -165,7 +171,7 @@ export default function Home() {
               >
                 2024 Open House Schedule
               </Link>
-            </li>
+            </li> */}
           </ul>
         </section>
 
