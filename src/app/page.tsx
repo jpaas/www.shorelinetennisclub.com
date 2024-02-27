@@ -103,11 +103,9 @@ export default function Home() {
               Court Booking Rules
             </Link>
           </p>
+          <p>Court 1 and 2 are booked for Doubles Round Robins on Mondays and Wednesdays from 7 to 9 pm.</p>
           <p>
-          Court 1 and 2 are booked for Doubles Round Robins on Mondays and Wednesdays from 7 to 9 pm.
-          </p>
-          <p>
-          Mondays are mainly for men, and Wednesdays are mainly for women. However, all genders are welcome to join.
+            Mondays are mainly for men, and Wednesdays are mainly for women. However, all genders are welcome to join.
           </p>
           <p className="pt-2">
             One court might be used for Little Aces tennis from 4:30 to 6:30 pm on weekdays. Junior lessons from ages 6
