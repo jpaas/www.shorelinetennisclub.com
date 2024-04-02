@@ -108,9 +108,10 @@ export default function Home() {
             Mondays are mainly for men, and Wednesdays are mainly for women. However, all genders are welcome to join.
           </p>
           <p className="pt-2">
-            One court might be used for Little Aces tennis from 4:30 to 6:30 pm on weekdays. Junior lessons from ages 6
-            to teens are provided by Mississauga Little Aces. Email{" "}
-            <Link href="mailto:lesson@mississaugalittleaces.com">lesson@mississaugalittleaces.com</Link> for more info.
+            Junior lessons from ages 6 to teens are provided by{" "}
+            <Link href="https://mississaugalittleaces.com/tennis-programs/junior-tennis-lessons/">
+              Mississauga Little Aces
+            </Link>
           </p>
           <h2>Interested in Adult or Family Tennis Lessons?</h2>
           <p>
