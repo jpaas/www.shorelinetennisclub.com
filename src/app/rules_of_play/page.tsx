@@ -41,9 +41,9 @@ export default function Home() {
             <li>No dog is allowed inside the fence of the courts.</li>
             <li>Court booking for singles, doubles and general play is for 30 to 60 minutes.</li>
             <li>
-              The courts at Shoreline Tennis club are intended for community and recreational use. Any lesson or
-              training held in these courts must be approved and regulated by the club. Any persons found to be
-              conducting unsanctioned private lessons or training will have their membership revoked.
+              The courts at Shoreline Tennis Club are intended for community and recreational use. No coaching is
+              allowed except for the club’s approved coach. Any persons found to be conducting unsanctioned private
+              lessons or training will have their membership revoked.
             </li>
           </ol>
         </section>
