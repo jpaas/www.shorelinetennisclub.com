@@ -40,7 +40,7 @@ export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
         Rules of Play
       </Link>
 
-      <Link className={className} href="mailto:info@shorelintennisclub.com" onClick={onNavigate}>
+      <Link className={className} href="mailto:info@shorelinetennisclub.com" onClick={onNavigate}>
         Contact Us
       </Link>
     </p>
