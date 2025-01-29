@@ -68,7 +68,7 @@ export default function CpNavHeader() {
             </svg>
             Shoreline Tennis Club
           </Link>
-          <div>2024 Season</div>
+          <div>2025 Season</div>
         </div>
         {!isExtraSmallScreen && (
           <nav className={`container mx-auto ${styles.headerNav}`}>
