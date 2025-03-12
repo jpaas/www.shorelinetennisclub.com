@@ -157,7 +157,7 @@ export default function Home() {
                 rel="noreferrer"
                 target="_blank"
               >
-                2024 AGM Minutes
+                2025 AGM Minutes
               </Link>
             </li>
             <li>
