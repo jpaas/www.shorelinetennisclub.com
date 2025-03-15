@@ -24,7 +24,7 @@ export default function CpNavLinks({ onNavigate, type }: CpNavLinksProps) {
 
       <Link
         className={className}
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfjsdIQVx1xS_ylCRsVurmFZKKNn072z7yDeb89ytKUNzmqaA/viewform"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc5xPouzYKYwHEPBPnGJ9esZDmIsR9d87cd0W_HNzfYACCFwA/viewform"
         onClick={onNavigate}
         rel="noreferrer"
         target="_blank"
