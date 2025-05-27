@@ -107,12 +107,12 @@ export default function Home() {
           <p>
             Mondays are mainly for men, and Wednesdays are mainly for women. However, all genders are welcome to join.
           </p>
-          <p className="pt-2">
+          {/*<p className="pt-2">
             Junior lessons from ages 6 to teens are provided by{" "}
             <Link href="https://mississaugalittleaces.com/tennis-programs/junior-tennis-lessons/">
               Mississauga Little Aces
             </Link>
-          </p>
+          </p>*/}
           <h2>Interested in Adult or Family Tennis Lessons?</h2>
           <p>
             Please fill in&nbsp;
