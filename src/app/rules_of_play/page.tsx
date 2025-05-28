@@ -42,8 +42,8 @@ export default function Home() {
             <li>Court booking for singles, doubles and general play is for 30 to 60 minutes.</li>
             <li>
               The courts at Shoreline Tennis Club are intended for community and recreational use. No coaching is
-              allowed except for the club’s approved coach. Any persons found to be conducting unsanctioned private
-              lessons or training will have their membership revoked.
+              allowed except for coaching approved by the club. Any persons found to be conducting unsanctioned private
+              lessons or training may have their membership revoked.
             </li>
           </ol>
         </section>
