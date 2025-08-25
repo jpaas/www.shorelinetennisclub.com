@@ -1,0 +1,8 @@
+node = "22.18.0"
+npm = "11.5.2"
+yarn = "4.9.3"
+
+[env]
+
+[settings]
+auto-install = true

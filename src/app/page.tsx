@@ -167,7 +167,7 @@ export default function Home() {
                 target="_blank"
               >
                 2025 Open House Schedule
-                </Link>
+              </Link>
             </li>
           </ul>
         </section>
