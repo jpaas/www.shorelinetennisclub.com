@@ -104,9 +104,7 @@ export default function Home() {
             </Link>
           </p>
           <p>Court 1 and 2 are booked for Doubles Round Robins on Mondays from 7 to 9 pm.</p>
-          <p>
-            Mondays are mainly for men; however, all genders are welcome to join.
-          </p>
+          <p>Mondays are mainly for men; however, all genders are welcome to join.</p>
           {/*<p className="pt-2">
             Junior lessons from ages 6 to teens are provided by{" "}
             <Link href="https://mississaugalittleaces.com/tennis-programs/junior-tennis-lessons/">
