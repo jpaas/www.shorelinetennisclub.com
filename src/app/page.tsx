@@ -158,20 +158,6 @@ export default function Home() {
                 2025 AGM Minutes
               </Link>
             </li>
-            <li>
-              {false && (
-  <li>
-    <Link
-      href="https://docs.google.com/document/d/1EVZp8rpK5aSdUS6u2E7THoE0wNm5w1gSZl66OvTBH_8/edit?usp=sharing"
-      rel="noreferrer"
-      target="_blank"
-    >
-      2025 Open House Schedule
-    </Link>
-  </li>
-)}
-
-            </li>
           </ul>
         </section>
 
