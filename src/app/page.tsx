@@ -151,11 +151,20 @@ export default function Home() {
             </li>
             <li>
               <Link
-                href="https://docs.google.com/document/d/1AVhFM4YfXGFz6DleuutdrPJla6B0cx-RglDNTb5vXts/edit"
+                href="https://docs.google.com/document/d/1z5THlmd94yqJUqgE0AOEruR93Ljb9h9Z1LLVwAeVND4/edit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
               >
-                2025 AGM Minutes
+                2026 AGM Minutes
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://docs.google.com/document/d/1EVZp8rpK5aSdUS6u2E7THoE0wNm5w1gSZl66OvTBH_8/edit?usp=sharing"
+                rel="noreferrer"
+                target="_blank"
+              >
+                2026 Open House
               </Link>
             </li>
           </ul>
